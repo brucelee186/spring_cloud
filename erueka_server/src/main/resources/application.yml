@@ -1,0 +1,12 @@
+server:
+  port: 8761
+eureka:
+  client:
+    # 是否要在注册中心把自己当成一个微服务来注册,false不注册,如果注册了自己,那么不能再充电注册中心,其它的微服务也无法访问到注册中心而导致注册失败
+    register-with-eureka: true
+    # 是否要同步其它服务注册中心的数据
+    fetch-registry: false
+    service-url:
+      # 不修改instance-id的情况下,必须为eureka域名
+      defaultZone: http://localhost:8761/eureka/
+      #instance-id: eureka-server

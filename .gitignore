@@ -1,0 +1,6 @@
+# Project exclude paths
+/erueka_server/target/
+/eureka_client/target/
+/eureka_consumer/target/
+/rest_template/target/
+/zuul_gateway/target/

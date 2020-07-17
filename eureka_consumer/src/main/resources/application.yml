@@ -1,0 +1,12 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: eureka_consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    # 使用id地址进行注册
+    prefer-ip-address: true

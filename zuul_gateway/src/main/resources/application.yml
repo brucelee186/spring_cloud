@@ -1,0 +1,14 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: zuul_gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+# 给web请求给一个统一的入口
+zuul:
+  routes:
+    # 映射服务名与网关,不用记ip与端口号了
+    eureka_provider: /provider/**

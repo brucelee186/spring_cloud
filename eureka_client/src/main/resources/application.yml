@@ -1,0 +1,14 @@
+server:
+  port: 8011
+spring:
+  application:
+    # 当前微服务务在注册中心的名称
+    name: eureka_client
+eureka:
+  client:
+    service-url:
+      # 当前注册中心的访问地址,eureka为默认域名,使用其它域需要修改对应的配置文件,否则会报错误
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    # 是否将当前服务的ip注册到Eureka Server
+    prefer-ip-address: true
