@@ -3,7 +3,9 @@ server:
 spring:
   application:
     # 当前微服务务在注册中心的名称
-    name: eureka_client
+    # 微服务间的负载均衡ribbon不支持下划线的微服务,启动会报异常
+    # name: eureka_client
+    name: eureka-client
 eureka:
   client:
     service-url:

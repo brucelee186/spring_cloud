@@ -1,0 +1,12 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  # 将微服务间的负载均衡微服务ribbon注册到注册中心中
+  instance:
+    prefer-ip-address: true

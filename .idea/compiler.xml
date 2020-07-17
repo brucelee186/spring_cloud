@@ -9,20 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rest_template" />
         <module name="erueka_server" />
-        <module name="eureka_client" />
         <module name="zuul_gateway" />
-      </profile>
-      <profile name="Annotation profile for eureka_consumer" enabled="true">
-        <sourceOutputDir name="../consumer/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../consumer/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="eureka_consumer" />
-      </profile>
-      <profile name="Annotation profile for spring_cloud" enabled="true">
-        <sourceOutputDir name="../eureka_client2/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../eureka_client2/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="eureka_provider" />
+        <module name="ribbon" />
+        <module name="eureka_client" />
+        <module name="eureka_consumer" />
       </profile>
     </annotationProcessing>
   </component>
@@ -33,6 +24,7 @@
       <module name="eureka_consumer" options="-parameters" />
       <module name="eureka_provider" options="-parameters" />
       <module name="rest_template" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
       <module name="zuul_gateway" options="-parameters" />
     </option>
   </component>

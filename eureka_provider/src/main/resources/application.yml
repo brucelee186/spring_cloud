@@ -2,7 +2,9 @@ server:
   port: 8011
 spring:
   application:
-    name: eureka_provider
+     # ribbon微服务之间的负载均衡不支持下划线起名
+     # name: eureka_provider
+     name: eureka-provider
 eureka:
   client:
     service-url:

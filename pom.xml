@@ -15,6 +15,7 @@
         <module>rest_template</module>
         <module>eureka_consumer</module>
         <module>zuul_gateway</module>
+        <module>ribbon</module>
     </modules>
 
 

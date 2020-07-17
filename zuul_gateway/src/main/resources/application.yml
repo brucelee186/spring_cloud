@@ -11,4 +11,6 @@ eureka:
 zuul:
   routes:
     # 映射服务名与网关,不用记ip与端口号了
-    eureka_provider: /provider/**
+    # zull_gateway支持下划线的微服务,但ribbon不支持
+    # eureka_provider: /provider/**
+    eureka-provider: /provider/**
