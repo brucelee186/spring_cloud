@@ -10,6 +10,7 @@
         <module name="rest_template" />
         <module name="erueka_server" />
         <module name="zuul_gateway" />
+        <module name="feign" />
         <module name="eureka_provider" />
         <module name="ribbon" />
         <module name="eureka_client" />
@@ -23,6 +24,7 @@
       <module name="eureka_client" options="-parameters" />
       <module name="eureka_consumer" options="-parameters" />
       <module name="eureka_provider" options="-parameters" />
+      <module name="feign" options="-parameters" />
       <module name="rest_template" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="zuul_gateway" options="-parameters" />
