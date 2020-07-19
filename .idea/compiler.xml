@@ -7,19 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hystrix" />
-        <module name="config_client_native" />
-        <module name="rest_template" />
-        <module name="config_server_native" />
-        <module name="erueka_server" />
-        <module name="zuul_gateway" />
-        <module name="config_client_remote" />
-        <module name="feign" />
-        <module name="eureka_provider" />
         <module name="ribbon" />
-        <module name="eureka_client" />
         <module name="eureka_consumer" />
+        <module name="config_client_native" />
+        <module name="feign" />
+        <module name="zuul_gateway" />
+        <module name="zipkin_client" />
+        <module name="hystrix" />
+        <module name="eureka_client" />
+        <module name="rest_template" />
         <module name="cofnig_server_remote" />
+        <module name="config_client_remote" />
+        <module name="eureka_provider" />
+        <module name="config_server_native" />
+        <module name="zipkin_server" />
+        <module name="erueka_server" />
       </profile>
     </annotationProcessing>
   </component>
@@ -37,6 +39,8 @@
       <module name="hystrix" options="-parameters" />
       <module name="rest_template" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="zipkin_client" options="-parameters" />
+      <module name="zipkin_server" options="-parameters" />
       <module name="zuul_gateway" options="-parameters" />
     </option>
   </component>

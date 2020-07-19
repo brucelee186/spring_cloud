@@ -22,6 +22,8 @@
         <module>config_client_native</module>
         <module>cofnig_server_remote</module>
         <module>config_client_remote</module>
+        <module>zipkin_server</module>
+        <module>zipkin_client</module>
     </modules>
 
 
