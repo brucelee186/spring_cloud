@@ -10,7 +10,7 @@ spring:
           uri: https://github.com/brucelee186/spring_cloud.git
           search-paths: config
           username: brucelee186
-          passphrase: 71415937Ab
+          password: 71415937Ab
       label: master
 eureka:
   client:

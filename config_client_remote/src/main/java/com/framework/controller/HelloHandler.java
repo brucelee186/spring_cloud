@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloHandler {
 
-    @Value("${server.prot}")
+    @Value("${server.port}")
     private String port;
 
     @GetMapping("/index")
