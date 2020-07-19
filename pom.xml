@@ -21,6 +21,7 @@
         <module>config_server_native</module>
         <module>config_client_native</module>
         <module>cofnig_server_remote</module>
+        <module>config_client_remote</module>
     </modules>
 
 

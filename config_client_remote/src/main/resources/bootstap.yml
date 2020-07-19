@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      # 当前服务注册在Eureka Server上的名称,与远 仓库配置文件git目录下的配置文件名对应
+      name: config-client
+      # 对应配置文件获取的分支
+      label: master
+      #　启用查询功能
+      discover:
+        # 是滞开启Config服务的发现支持,就是可以查询Git下的配置文件功能
+        enabled: ture
+        # 在配置中心Eureka Server名称为config-server-remote的名称,并从中查找配置文件
+        service-id: config-server-remote
+eureka:
+  client:
+    # serviceUrl:
+    # 两者都可以
+    servie-url:
+      defaultZone: http://location:8761/eureka/
