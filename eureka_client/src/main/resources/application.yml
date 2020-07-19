@@ -1,5 +1,5 @@
 server:
-  port: 8011
+  port: 8010
 spring:
   application:
     # 当前微服务务在注册中心的名称

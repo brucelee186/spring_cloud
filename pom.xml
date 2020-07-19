@@ -17,6 +17,9 @@
         <module>zuul_gateway</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>hystrix</module>
+        <module>config_server_native</module>
+        <module>config_client_native</module>
     </modules>
 
 

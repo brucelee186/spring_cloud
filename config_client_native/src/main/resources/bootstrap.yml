@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-client-native
+  # 对应config_client_native中的config-client-native-dev.yml
+  profiles:
+    active: dev
+  # 通过Sprign.application.name结束Spring.profiles.active拼接目录配置文件名,ConfigServer
+  cloud:
+    config:
+      # 配置本地微服务需要访问获取配置文件的配置服务中心中的路径
+      uri: http://localhost:8762
+      # 设置客户端优先判断ConfigServer 获取是否正常
+      fail-fast: true
