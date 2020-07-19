@@ -18,11 +18,13 @@
         <module name="ribbon" />
         <module name="eureka_client" />
         <module name="eureka_consumer" />
+        <module name="cofnig_server_remote" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cofnig_server_remote" options="-parameters" />
       <module name="config_client_native" options="-parameters" />
       <module name="config_server_native" options="-parameters" />
       <module name="erueka_server" options="-parameters" />
